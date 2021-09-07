@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 
 
 function Perfil(props){
+
+    useEffect(()=>{
+        document.title = props.atributomio
+    }, [props.atributomio])
 
     return(
         <div style={{ background: "yellow" }}>
