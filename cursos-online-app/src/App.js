@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Perfil from './componentes/Perfil'
 
 function App() {
 
@@ -12,6 +13,10 @@ function App() {
     <div>
       <h1>Bienvenidos al curso de ASP.NET Core y React Hooks {nombre}</h1>
       <input name="nombre" type="text" value={nombre} onChange={eventoCajaTexto} />
+      <Perfil atributomio={nombre} />
+      <Perfil atributomio={nombre} />
+      <Perfil atributomio={nombre} />
+      <Perfil atributomio={nombre} />
     </div>
   );
 }
